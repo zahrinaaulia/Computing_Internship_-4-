@@ -1,3 +1,4 @@
+import math
 class Kubus:
 	jumlah_sisi = 6
 	def __init__(self,sisi):
@@ -40,7 +41,7 @@ class Kerucut:
 		self.jari_jari=jari_jari
 		self.tinggi=tinggi
 	def hitung_luas(self):
-		garis_pelukis = sqrt((self.jari_jari**2)+(self.tinggi**2))
+		garis_pelukis = math.sqrt((self.jari_jari**2)+(self.tinggi**2))
 		luas = 3.14 * self.jari_jari * (self.jari_jari + garis_pelukis)
 		return luas
 	def hitung_volume(self):

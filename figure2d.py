@@ -1,3 +1,4 @@
+import math
 class Segitiga:
 	jumlah_sisi = 3
 
@@ -23,7 +24,7 @@ class Samakaki(Segitiga):
 		luas=float((self.alas*self.tinggi)/2)
 		return luas
 	def hitung_keliling(self):
-		sisi_samping = sqrt((self.alas**2) + (self.tinggi**2))
+		sisi_samping = math.sqrt((self.alas**2) + (self.tinggi**2))
 		keliling = self.alas+(sisi_samping*2)
 		return keliling
 
